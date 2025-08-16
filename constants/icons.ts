@@ -3,6 +3,11 @@ import budgetIcon from "@/public/assets/svg/budget.svg";
 import calenderIcon from "@/public/assets/svg/calender.svg";
 import messageIcon from "@/public/assets/svg/message.svg";
 import myxelliaLogo from "@/public/assets/svg/myxellia-logo.svg";
+import dashboardIcon from "@/public/assets/svg/dashbord-icon.svg";
+import listingsIcon from "@/public/assets/svg/listings-icon.svg";
+import userIcon from "@/public/assets/svg/user-icon.svg";
+import requestIcon from "@/public/assets/svg/request-icon.svg";
+import applicationIcon from "@/public/assets/svg/applications-icon.svg";
 
 export const icons = {
   bellIcon,
@@ -10,4 +15,9 @@ export const icons = {
   calenderIcon,
   messageIcon,
   myxelliaLogo,
+  dashboardIcon,
+  listingsIcon,
+  userIcon,
+  requestIcon,
+  applicationIcon,
 };

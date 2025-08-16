@@ -3,6 +3,8 @@ import Logo from "./logo";
 import Image from "next/image";
 import { icons } from "@/constants/icons";
 import Profile from "./profile";
+import NavigationTabs from "./navigation-tabs";
+import SearchInput from "./search-input";
 
 export default function AppNav() {
   return (
@@ -19,7 +21,10 @@ export default function AppNav() {
           <Profile />
         </div>
       </div>
-      <div className="costume-padding border-b-2 w-full h-1/2"></div>
+      <div className="costume-padding border-b-2 w-full h-1/2 flex items-center">
+        <NavigationTabs />
+        <SearchInput />
+      </div>
     </header>
   );
 }
