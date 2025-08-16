@@ -6,10 +6,10 @@ import UsersOverview from "./users-overview";
 export default function DashboardScreen() {
   return (
     <div className=" flex w-full gap-4">
-      <div className=" flex-3">
+      <div className=" flex-8">
         <SalesOverview />
       </div>
-      <div className=" flex-2 bg-amber-900">
+      <div className=" flex-4 flex flex-col justify-between">
         <ListingsOverview />
         <UsersOverview />
       </div>

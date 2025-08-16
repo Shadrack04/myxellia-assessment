@@ -5,10 +5,11 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
+import { CashFlowCard } from "./cash-flow-card";
 
 export default function SalesOverview() {
   return (
-    <Card className="w-full max-w-sm px-0">
+    <Card className="w-full px-0">
       <CardHeader className="border-b-2 ">
         <div className="flex justify-between ">
           <div>
@@ -19,8 +20,17 @@ export default function SalesOverview() {
             <Button>View Transactions</Button>
           </div>
         </div>
+        <div></div>
       </CardHeader>
-      <CardContent></CardContent>
+      <CardContent className="w-full grid grid-cols-2">
+        <div className=" ">hello</div>
+        <div className=" grid grid-cols-2 gap-4">
+          <CashFlowCard />
+          <CashFlowCard />
+          <CashFlowCard />
+          <CashFlowCard />
+        </div>
+      </CardContent>
       <CardFooter className="flex-col gap-2"></CardFooter>
     </Card>
   );
