@@ -1,3 +1,5 @@
+import DashboardScreen from "@/features/components/dashboard-screen";
+
 export default function Page() {
-  return <div></div>;
+  return <DashboardScreen />;
 }
