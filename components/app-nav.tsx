@@ -26,8 +26,8 @@ export default function AppNav() {
       <div className="costume-padding border-b-2 w-full h-1/2 flex items-center">
         <NavigationTabs />
         <SearchInput />
-        <CalenderComponent />
-        <BudgetingCard />
+        {/* <CalenderComponent />
+        <BudgetingCard /> */}
       </div>
     </header>
   );

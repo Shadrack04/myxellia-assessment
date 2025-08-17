@@ -19,7 +19,7 @@ export function CashFlowCard({
   percentage,
 }: CashFlowCardProps) {
   return (
-    <Card className=" p-2 rounded-md">
+    <Card className=" p-2 rounded-md gap-0">
       <CardContent className="px-2 flex flex-col gap-1">
         <h3 style={{ color }} className={` font-bold`}>
           ₦{formatAmount.format(amount)}

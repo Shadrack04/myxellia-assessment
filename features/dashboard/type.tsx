@@ -10,3 +10,13 @@ export type OverviewSummaryProps = {
   sectionTitle: string;
   summary: SummaryType[];
 };
+
+export type SalesOverviewDataType {
+  label: string[];
+  datasets: {
+    data: number[];
+    backgroundColor: string;
+    barPercentage: number;
+    categoryPercentage: number;
+  }[];
+};

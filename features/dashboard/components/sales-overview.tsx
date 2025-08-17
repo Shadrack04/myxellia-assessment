@@ -8,10 +8,13 @@ import {
 import { CashFlowCard } from "./cash-flow-card";
 import DurationTabs from "@/components/duration-tabs";
 import { icons } from "@/constants/icons";
+import BarChart from "./barchart";
+import { salesOverviewData } from "@/data";
 
 export default function SalesOverview() {
+  const data = salesOverviewData;
   return (
-    <Card className="w-full p-0">
+    <Card className="w-full p-0 gap-2">
       <CardHeader className="border-b-2 pt-3 px-3">
         <div className="flex justify-between ">
           <div className=" flex flex-col gap-1">
@@ -34,8 +37,10 @@ export default function SalesOverview() {
         </div>
       </CardHeader>
       <CardContent className="w-full grid grid-cols-2">
-        <div className=" ">hello</div>
-        <div className=" grid grid-cols-2 gap-4 pl-6">
+        <div className=" ">
+          <BarChart data={data} />
+        </div>
+        <div className=" grid grid-cols-2 pt-4 gap-2 pl-6">
           <CashFlowCard
             icon={icons.inflowIcon}
             amount={120000000}
