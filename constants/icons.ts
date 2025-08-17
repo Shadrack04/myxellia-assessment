@@ -13,6 +13,10 @@ import listingIconBlue from "@/public/assets/svg/listing-blue.svg";
 import inflowIcon from "@/public/assets/svg/inflow-icon.svg";
 import gmvIcon from "@/public/assets/svg/gmv-icon.svg";
 import revenueIcon from "@/public/assets/svg/revenue-icon.svg";
+import budgetIcon1 from "@/public/assets/svg/budget-icon1.svg";
+import budgetIcon2 from "@/public/assets/svg/budget-icon2.svg";
+import budgetIcon3 from "@/public/assets/svg/budget-icon3.svg";
+import budgetCalculator from "@/public/assets/svg/budget-calculator.svg";
 
 export const icons = {
   bellIcon,
@@ -30,4 +34,8 @@ export const icons = {
   inflowIcon,
   gmvIcon,
   revenueIcon,
+  budgetIcon1,
+  budgetIcon2,
+  budgetIcon3,
+  budgetCalculator,
 };

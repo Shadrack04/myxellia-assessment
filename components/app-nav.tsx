@@ -5,6 +5,8 @@ import { icons } from "@/constants/icons";
 import Profile from "./profile";
 import NavigationTabs from "./navigation-tabs";
 import SearchInput from "./search-input";
+import CalenderComponent from "./calendar";
+import BudgetingCard from "./budgeting";
 
 export default function AppNav() {
   return (
@@ -24,6 +26,8 @@ export default function AppNav() {
       <div className="costume-padding border-b-2 w-full h-1/2 flex items-center">
         <NavigationTabs />
         <SearchInput />
+        <CalenderComponent />
+        <BudgetingCard />
       </div>
     </header>
   );
