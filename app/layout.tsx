@@ -29,7 +29,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <AppNav />
-        <main className="costume-padding">{children}</main>
+        <main className="costume-padding bg-stone-50">
+          <div className=" py-2">
+            <h1 className=" text-xl font-bold">Welcome, Ahmed</h1>
+          </div>
+          {children}
+        </main>
       </body>
     </html>
   );

@@ -7,9 +7,9 @@ import { images } from "@/constants/images";
 
 export default function DashboardScreen() {
   return (
-    <div className=" py-8 flex flex-col gap-4">
+    <div className=" pb-8 flex flex-col gap-4">
       <div className=" flex w-full gap-4">
-        <div className=" flex-8">
+        <div className=" flex-10">
           <SalesOverview />
         </div>
         <div className=" flex-4 flex flex-col justify-between">

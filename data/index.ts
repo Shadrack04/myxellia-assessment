@@ -19,3 +19,23 @@ export const navData: NavDataType[] = [
     tabValue: "5",
   },
 ];
+
+export const listingOverviewData = {
+  image: icons.listingIconBlue,
+  sectionTitle: "Listing Overview",
+  summary: [
+    { title: "Total", amount: 1.8 },
+    { title: "Active", amount: 80 },
+    { title: "Archived", amount: 1 },
+  ],
+};
+
+export const UsersOverviewData = {
+  image: icons.userIconBlue,
+  sectionTitle: "Users Overview",
+  summary: [
+    { title: "Total", amount: 20.7 },
+    { title: "Riders", amount: 8.5 },
+    { title: "Subscribers", amount: 7.5 },
+  ],
+};

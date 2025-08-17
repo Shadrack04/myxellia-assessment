@@ -8,6 +8,8 @@ import listingsIcon from "@/public/assets/svg/listings-icon.svg";
 import userIcon from "@/public/assets/svg/user-icon.svg";
 import requestIcon from "@/public/assets/svg/request-icon.svg";
 import applicationIcon from "@/public/assets/svg/applications-icon.svg";
+import userIconBlue from "@/public/assets/svg/user-blue.svg";
+import listingIconBlue from "@/public/assets/svg/listing-blue.svg";
 
 export const icons = {
   bellIcon,
@@ -20,4 +22,6 @@ export const icons = {
   userIcon,
   requestIcon,
   applicationIcon,
+  userIconBlue,
+  listingIconBlue,
 };
