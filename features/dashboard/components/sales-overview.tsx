@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/card";
 import { CashFlowCard } from "./cash-flow-card";
 import DurationTabs from "@/components/duration-tabs";
+import { icons } from "@/constants/icons";
 
 export default function SalesOverview() {
   return (
@@ -22,7 +23,7 @@ export default function SalesOverview() {
           <div>
             <Button
               variant={"outline"}
-              className=" rounded-full font-medium px-8 py-5 text-sm"
+              className=" rounded-full font-medium px-8 py-5 text-xs"
             >
               View Transactions
             </Button>
@@ -35,10 +36,34 @@ export default function SalesOverview() {
       <CardContent className="w-full grid grid-cols-2">
         <div className=" ">hello</div>
         <div className=" grid grid-cols-2 gap-4 pl-6">
-          <CashFlowCard />
-          <CashFlowCard />
-          <CashFlowCard />
-          <CashFlowCard />
+          <CashFlowCard
+            icon={icons.inflowIcon}
+            amount={120000000}
+            typeOfFlow="Total Inflow"
+            color="#4545FE"
+            percentage={20}
+          />
+          <CashFlowCard
+            icon={icons.inflowIcon}
+            amount={50000000}
+            typeOfFlow="MRR"
+            color="#12B76A"
+            percentage={2.5}
+          />
+          <CashFlowCard
+            icon={icons.gmvIcon}
+            amount={200000000}
+            typeOfFlow="GMV"
+            color="#14B8A6"
+            percentage={0.5}
+          />
+          <CashFlowCard
+            icon={icons.revenueIcon}
+            amount={120000000}
+            typeOfFlow="Revenue"
+            color="#F04438"
+            percentage={0.5}
+          />
         </div>
       </CardContent>
       <CardFooter className="flex-col gap-2"></CardFooter>
