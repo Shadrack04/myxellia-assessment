@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Logo from "./logo";
 import Image from "next/image";
 import { icons } from "@/constants/icons";
@@ -8,25 +8,33 @@ import Profile from "./profile";
 import NavigationTabs from "./navigation-tabs";
 import SearchInput from "./search-input";
 import CalenderComponent from "./calendar";
-import BudgetingCard from "./budgeting";
+
+import BudgetDialog from "./budget-dialog";
 
 export default function AppNav() {
-  const [isOpenBudget, setIsOpenBudget] = useState(false);
-
   return (
     <header className=" w-full h-34">
       <div className="costume-padding bg-foreground w-full h-1/2 flex items-center justify-between">
         <Logo />
         <div className=" flex items-center justify-center gap-6">
           <div className=" flex items-center justify-center gap-6">
-            <Image src={icons.bellIcon} alt="Notification icon" />
             <Image
-              onClick={() => setIsOpenBudget((open) => !open)}
-              src={icons.budgetIcon}
-              alt="Notification icon"
+              src={icons.bellIcon}
+              alt="Notification icon "
+              className=" size-6"
             />
-            <Image src={icons.calenderIcon} alt="Notification icon" />
-            <Image src={icons.messageIcon} alt="Notification icon" />
+
+            <BudgetDialog />
+            <Image
+              src={icons.calenderIcon}
+              alt="Notification icon"
+              className=" size-6"
+            />
+            <Image
+              src={icons.messageIcon}
+              alt="Notification icon"
+              className=" size-6"
+            />
           </div>
           <Profile />
         </div>
@@ -35,16 +43,6 @@ export default function AppNav() {
         <NavigationTabs />
         <SearchInput />
         <CalenderComponent />
-        {isOpenBudget && (
-          <>
-            {" "}
-            <BudgetingCard isOpenBudget={isOpenBudget} />
-            <div
-              onClick={() => setIsOpenBudget(false)}
-              className=" fixed inset-0 bg-black/50"
-            ></div>
-          </>
-        )}
       </div>
     </header>
   );

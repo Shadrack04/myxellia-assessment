@@ -69,7 +69,7 @@ export default function BudgetingCard({ isOpenBudget }: BudgetingCardProps) {
         </div>
       </CardContent>
       <CardFooter>
-        <Button className=" w-full">Create Budget</Button>
+        <Button className=" rounded-full w-full">Create Budget</Button>
       </CardFooter>
     </Card>
   );
