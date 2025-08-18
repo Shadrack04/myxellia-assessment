@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Card,
   CardContent,
@@ -9,10 +11,22 @@ import { images } from "@/constants/images";
 import { icons } from "@/constants/icons";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { useEffect } from "react";
 
-export default function BudgetingCard() {
+type BudgetingCardProps = {
+  isOpenBudget: boolean;
+};
+
+export default function BudgetingCard({ isOpenBudget }: BudgetingCardProps) {
+  useEffect(() => {
+    if (isOpenBudget) {
+      document.body.classList.add("overflow-hidden");
+    } else document.body.classList.remove("overflow-hidden");
+
+    return () => document.body.classList.remove("overflow-hidden");
+  }, [isOpenBudget]);
   return (
-    <Card className="w-full max-w-sm z-50 gap-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-0 pb-6">
+    <Card className="w-full max-w-sm overflow-hidden z-50 gap-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-0 pb-6">
       <CardHeader className=" relative bg-[#0C2841] px-5.5 pt-5.5 pb-0 gap-0">
         <Image src={images.budgetHeader} alt="Budget header image" />
         <Image
