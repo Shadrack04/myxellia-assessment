@@ -1,4 +1,3 @@
-import { images } from "@/constants/images";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 

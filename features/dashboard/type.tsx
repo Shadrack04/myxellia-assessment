@@ -11,7 +11,7 @@ export type OverviewSummaryProps = {
   summary: SummaryType[];
 };
 
-export type SalesOverviewDataType {
+export type SalesOverviewDataType = {
   label: string[];
   datasets: {
     data: number[];

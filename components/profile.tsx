@@ -3,17 +3,14 @@ import React from "react";
 import {
   BoltIcon,
   BookOpenIcon,
-  CircleUserRoundIcon,
   Layers2Icon,
   LogOutIcon,
   PinIcon,
-  UserPenIcon,
 } from "lucide-react";
 
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,

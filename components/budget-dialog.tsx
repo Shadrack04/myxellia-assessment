@@ -1,20 +1,12 @@
-"use client";
-
-import { useState } from "react";
-import { ArrowRightIcon } from "lucide-react";
-
-import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogFooter,
   DialogHeader,
-  DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import BudgetingCard from "./budgeting";
+
 import Image from "next/image";
 import { images } from "@/constants/images";
 import { icons } from "@/constants/icons";

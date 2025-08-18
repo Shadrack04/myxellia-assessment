@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import Image, { StaticImageData } from "next/image";
-import { icons } from "@/constants/icons";
+import Image from "next/image";
+
 import { ChevronRight } from "lucide-react";
 import { OverviewSummaryProps } from "@/features/dashboard/type";
 
