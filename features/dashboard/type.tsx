@@ -12,7 +12,7 @@ export type OverviewSummaryProps = {
 };
 
 export type SalesOverviewDataType = {
-  label: string[];
+  labels: string[];
   datasets: {
     data: number[];
     backgroundColor: string;
