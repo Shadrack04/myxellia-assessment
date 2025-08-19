@@ -12,7 +12,7 @@ export default function NavigationTabs() {
           <TabsTrigger
             key={item.id}
             value={item.tabValue}
-            className="data-[state=active]:bg-muted data-[state=active]:font-bold font-normal flex items-center justify-center gap-2 py-4"
+            className="data-[state=active]:bg-muted data-[state=active]:shadow-xs data-[state=active]:font-bold font-normal flex items-center justify-center gap-2 py-4"
           >
             <Image
               src={item.icon}

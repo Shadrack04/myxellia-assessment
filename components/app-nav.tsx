@@ -36,7 +36,7 @@ export default function AppNav() {
           <Profile />
         </div>
       </div>
-      <div className="costume-padding border-b-2 w-full h-1/2 flex items-center">
+      <div className="costume-padding border-b-1 w-full h-1/2 flex items-center">
         <NavigationTabs />
         <SearchInput />
       </div>

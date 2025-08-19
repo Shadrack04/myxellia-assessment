@@ -17,6 +17,8 @@ import budgetIcon1 from "@/public/assets/svg/budget-icon1.svg";
 import budgetIcon2 from "@/public/assets/svg/budget-icon2.svg";
 import budgetIcon3 from "@/public/assets/svg/budget-icon3.svg";
 import budgetCalculator from "@/public/assets/svg/budget-calculator.svg";
+import arrowLeft from "@/public/assets/svg/arrow-left.svg";
+import arrowRight from "@/public/assets/svg/arrow-right.svg";
 
 export const icons = {
   bellIcon,
@@ -38,4 +40,6 @@ export const icons = {
   budgetIcon2,
   budgetIcon3,
   budgetCalculator,
+  arrowRight,
+  arrowLeft,
 };
