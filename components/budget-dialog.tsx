@@ -18,7 +18,7 @@ export default function BudgetDialog() {
         <Image
           src={icons.budgetIcon}
           alt="Notification icon"
-          className=" size-6"
+          className=" size-6 cursor-pointer"
         />
       </DialogTrigger>
 

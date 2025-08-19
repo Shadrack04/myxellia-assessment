@@ -1,8 +1,24 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import AppNav from "@/components/app-nav";
-import BudgetDialog from "@/components/budget-dialog";
+
+const euclid = localFont({
+  src: [
+    {
+      path: "../public/fonts/Euclid-Circular-B-Bold.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Euclid-Circular-B-Light.ttf",
+      weight: "200",
+      style: "normal",
+    },
+  ],
+  variable: "--font-euclid",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,13 +43,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${euclid.variable} ${geistMono.variable} ${geistSans.variable} antialiased`}
       >
         <AppNav />
         <main className="costume-padding bg-[#FBFCFC]">
           <div className=" py-2">
-            <h1 className=" text-xl font-bold">Welcome, Ahmed</h1>
-            <BudgetDialog />
+            <h1 className="user text-xl font-bold">Welcome, Ahmed</h1>
           </div>
           {children}
         </main>

@@ -76,6 +76,8 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  --font-euclid: "Euclid Circular B", sans-serif;
 }
 
 .dark {
@@ -120,6 +122,28 @@
     @apply bg-background text-foreground;
   }
 }
+
+.user {
+  font-family: var(--font-euclid);
+}
+
+/* @font-face {
+  font-family: "Euclid Circular B";
+  src: url("fonts/Euclid-Circular-B-Bold.ttff") format("ttff");
+
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url("/fonts/Euclid-Circular-B-Light.ttff") format("ttff");
+
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+} */
 
 .costume-padding {
   @apply lg:px-18 px-4;
