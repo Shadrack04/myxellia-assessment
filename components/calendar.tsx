@@ -32,7 +32,7 @@ export default function CalendarComponent() {
         ),
 
         // make sure table is a grid
-        table: "grid grid-cols-7 gap-y-1 bg-red-400",
+        table: "grid grid-cols-7 gap-y-1 bg-red-400 border border-gray-300",
 
         // weekday row
         weekdays: cn("grid  grid-cols-7", defaultClassNames.weekdays),
@@ -42,10 +42,10 @@ export default function CalendarComponent() {
         ),
 
         // each week is a 7-col grid row
-        week: "grid grid-cols-7",
+        week: "grid grid-cols-7 content",
 
         // each cell compact square
-        cell: "p-0 w-[2.5rem] h-[2.5rem]  flex items-center border-2 border-gray-300 justify-center",
+        cell: "p-0 w-[2.5rem] h-[2.5rem] border border-gray-300 flex items-center border-2 border-gray-300 justify-center border border-gray-300",
         row: "grid grid-cols-7 border-2 border-gray-300",
 
         // day button inside cell
