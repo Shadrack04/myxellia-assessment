@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${euclid.variable} ${geistMono.variable} ${geistSans.variable} antialiased`}
+        className={`${euclid.variable} ${geistMono.variable} ${geistSans.variable} antialiased 2xl:w-[86rem] mx-auto`}
       >
         <AppNav />
         <main className="costume-padding bg-[#FBFCFC]">
