@@ -13,9 +13,14 @@ import CalendarComponent from "./calendar";
 import Image from "next/image";
 import { icons } from "@/constants/icons";
 
-export default function CalendarDropdown(e) {
+export default function CalendarDropdown() {
+  const handleOpen = (e: boolean) => {
+    if (e) {
+      document.body.classList.add("overflow-hidden");
+    } else document.body.classList.remove("overflow-hidden");
+  };
   return (
-    <Popover>
+    <Popover onOpenChange={handleOpen}>
       <PopoverTrigger asChild>
         <Image
           src={icons.calenderIcon}
