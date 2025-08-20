@@ -10,12 +10,13 @@ import DurationTabs from "@/components/duration-tabs";
 import { icons } from "@/constants/icons";
 import BarChart from "./barchart";
 import { salesOverviewData } from "@/data";
+import Arrow from "@/components/arrow";
 
 export default function SalesOverview() {
   const data = salesOverviewData;
   return (
-    <Card className="w-full p-0 gap-2">
-      <CardHeader className="border-b-2 pt-3 px-3">
+    <Card className="w-full px-0 gap-2 py-2">
+      <CardHeader className="border-b-1 pt-3 px-3">
         <div className="flex justify-between ">
           <div className=" flex flex-col gap-1">
             <h2 className=" font-bold text-lg">Sales Overview</h2>
@@ -36,9 +37,11 @@ export default function SalesOverview() {
           <DurationTabs />
         </div>
       </CardHeader>
-      <CardContent className="w-full grid grid-cols-2">
-        <div className=" ">
+      <CardContent className=" relative w-full gap-2 grid grid-cols-2">
+        <div className="flex items-center">
+          <Arrow direction="left" className=" size-3 p-0.5 rounded-full" />
           <BarChart data={data} />
+          <Arrow direction="right" className=" size-4" />
         </div>
         <div className=" grid grid-cols-2 pt-4 gap-2 pl-6">
           <CashFlowCard

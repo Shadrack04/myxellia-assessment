@@ -17,7 +17,7 @@ export default function OverviewSummary({
           <Image src={image} alt="listings icon" />
           <p className=" text-sm">{sectionTitle}</p>
         </div>
-        <button className=" text-sm flex items-center justify-center gap-1">
+        <button className=" text-sm flex items-center text-[#6163e0] justify-center gap-1">
           View all <ChevronRight className=" size-4" />
         </button>
       </CardHeader>

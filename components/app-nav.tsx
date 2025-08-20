@@ -1,15 +1,15 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Logo from "./logo";
 import Image from "next/image";
 import { icons } from "@/constants/icons";
 import Profile from "./profile";
 import NavigationTabs from "./navigation-tabs";
 import SearchInput from "./search-input";
-import CalenderComponent from "./calendar";
 
 import BudgetDialog from "./budget-dialog";
+import CalendarDropdown from "./calendar-dropdown";
 
 export default function AppNav() {
   return (
@@ -21,28 +21,24 @@ export default function AppNav() {
             <Image
               src={icons.bellIcon}
               alt="Notification icon "
-              className=" size-6"
+              className=" size-6 cursor-pointer"
             />
 
             <BudgetDialog />
-            <Image
-              src={icons.calenderIcon}
-              alt="Notification icon"
-              className=" size-6"
-            />
+
+            <CalendarDropdown />
             <Image
               src={icons.messageIcon}
               alt="Notification icon"
-              className=" size-6"
+              className=" size-6 cursor-pointer"
             />
           </div>
           <Profile />
         </div>
       </div>
-      <div className="costume-padding border-b-2 w-full h-1/2 flex items-center">
+      <div className="costume-padding border-b-1 w-full h-1/2 flex items-center">
         <NavigationTabs />
         <SearchInput />
-        <CalenderComponent />
       </div>
     </header>
   );
