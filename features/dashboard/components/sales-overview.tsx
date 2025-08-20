@@ -15,7 +15,7 @@ import Arrow from "@/components/arrow";
 export default function SalesOverview() {
   const data = salesOverviewData;
   return (
-    <Card className="w-full px-0 gap-2 py-2">
+    <Card className="w-full px-0 gap-2 py-0">
       <CardHeader className="border-b-1 pt-3 px-3">
         <div className="flex justify-between ">
           <div className=" flex flex-col gap-1">
