@@ -33,7 +33,7 @@ export default function SalesOverview() {
             </Button>
           </div>
         </div>
-        <div className=" w-full flex items-center justify-end">
+        <div className=" w-full flex items-center justify-center md:justify-end">
           <DurationTabs />
         </div>
       </CardHeader>
