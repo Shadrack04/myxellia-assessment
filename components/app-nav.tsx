@@ -17,7 +17,7 @@ export default function AppNav() {
       <div className="costume-padding bg-foreground w-full h-1/2 flex items-center justify-between">
         <Logo />
         <div className=" flex items-center justify-center gap-6">
-          <div className=" flex items-center justify-center gap-6">
+          <div className="hidden md:flex items-center justify-center gap-6">
             <Image
               src={icons.bellIcon}
               alt="Notification icon "

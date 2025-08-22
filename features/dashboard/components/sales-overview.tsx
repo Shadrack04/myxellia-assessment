@@ -37,7 +37,7 @@ export default function SalesOverview() {
           <DurationTabs />
         </div>
       </CardHeader>
-      <CardContent className=" relative w-full gap-2 grid grid-cols-2">
+      <CardContent className=" relative w-full gap-2 grid grid-cols-1 md:grid-cols-2">
         <div className="flex items-center">
           <Arrow direction="left" className=" size-3 p-0.5 rounded-full" />
           <BarChart data={data} />
