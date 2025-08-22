@@ -8,7 +8,7 @@ import { images } from "@/constants/images";
 export default function DashboardScreen() {
   return (
     <div className=" pb-8 flex flex-col gap-4">
-      <div className=" flex w-full gap-4">
+      <div className=" flex flex-col md:flex-row w-full gap-4">
         <div className=" flex-10">
           <SalesOverview />
         </div>

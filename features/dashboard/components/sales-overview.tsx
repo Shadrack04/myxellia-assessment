@@ -20,7 +20,7 @@ export default function SalesOverview() {
         <div className="flex justify-between ">
           <div className=" flex flex-col gap-1">
             <h2 className=" font-bold text-lg">Sales Overview</h2>
-            <p className=" text-xs text-gray-400">
+            <p className=" w-32 md:w-auto text-xs text-gray-400">
               Showing overview Jan 2022 - Sep 2022
             </p>
           </div>
